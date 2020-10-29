@@ -1,0 +1,1122 @@
+/* body section css  */
+body{
+    margin:0px;
+    padding: 0px;
+    cursor:url(Assets/Translucent\ White.cur),auto;
+     overflow: hidden; 
+     background-image: url(wp3482595.jpg);
+     background-size: cover;
+    
+
+}
+/* animation for cahnge color*/
+
+
+  @keyframes changeColor{
+    0%{
+         color: white;        
+        }
+        33%{
+          color: lightblue;
+        }
+        66%{
+          color: lightskyblue; 
+        }
+        100%{
+          color:skyblue; 
+        
+        
+      }
+    }
+    
+    /* animation for change text color */
+    @keyframes change{
+      0%{
+        color:whitesmoke;    /* top:50px; */
+          }
+          33%{
+            color:lightgrey; 
+          }
+          66%{
+            color:gray; 
+          }
+          100%{
+            color: black;
+          
+          
+        }
+      }
+      /* animation for rotation of logo */
+      @keyframes rotation{
+100%{
+            transform: rotate(360deg);/* top:50px; */
+            }
+                     
+            
+            
+          }
+
+          /* animation for list header shadow */
+        
+          @keyframes changeb{
+            0%{
+              BOX-SHADOW: 0 0 10PX 4PX mediumseagreen;    /* top:50px; */
+                }
+                33%{
+                  BOX-SHADOW: 0 0 10PX 4PX red;
+                }
+                66%{
+                  BOX-SHADOW: 0 0 10PX 4PX rgb(236, 35, 193);
+                }
+                100%{
+                  BOX-SHADOW: 0 0 10PX 4PX DODGERBLUE;
+                
+                
+              }
+            }
+
+            /* animation for ninja studio name  */
+            @keyframes changec{
+              0%{
+              font-size: small;    /* top:50px; */
+                  }
+                  33%{
+              font-size:large;    /* top:50px; */
+                    
+                  }
+                  66%{
+              font-size: x-large;    /* top:50px; */
+                    
+                  }
+                  100%{
+                    text-shadow:  0px 7PX 10PX DODGERBLUE;
+              font-size: xx-large;    /* top:50px; */
+                    
+                  
+                  
+                }
+              }
+             
+            @keyframes changev{
+              
+              0%{
+                BOX-SHADOW:  2px 1PX 0PX white;    /* top:50px; */
+                  }
+                  33%{
+                    BOX-SHADOW: 4px 0 4PX 0PX white;
+                  }
+                  66%{
+                    BOX-SHADOW: 6px 0 6PX 0PX white;
+                  }
+                  100%{
+                    BOX-SHADOW: 8px 0 8PX 0PX white;
+                    ;
+                  
+                  
+                }
+              }
+
+
+              @keyframes changes{
+                0%{
+                transform: scale(0);  
+                /* transform: rotate(90);  top:50px; */
+                    }
+                    33%{
+                /* transform: scale(0.33);   top:50px; */
+                transform: rotate(180deg);  /* top:50px; */
+
+                      
+                    }
+                    66%{
+                      transform: scale(0.66);   /* top:50px; */
+                      /* transform: rotate(270deg);  top:50px; */
+                
+                      
+                    }
+                    100%{
+                /* transform: scale(1);   top:50px; */
+                transform: rotate(360deg);  
+
+                      
+                
+                      
+                    
+                    
+                  }
+                }
+
+
+
+
+
+
+
+      /* to hide the scroll bar*/
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+    
+  
+    
+
+
+   /* header section css to make it fixed on top */
+     header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+            color: white;
+            top: 0px;
+            background-image: url(web-header.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            /* border-radius: 50px; */
+            height: 15%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            
+             
+            }
+     /* divs in header section */
+            header div{
+              
+
+              width: 30vw;
+            }
+              
+
+
+            /* css for logo */
+            header #logo{
+              display: flex;
+              flex-direction: row;
+              float: left;
+                text-align: left;
+                        }
+            head #logo div img{
+              /* animation: rotation 2s infinite linear ; animation: rotation 2s infinite linear ; */
+            }            
+            header #logo div{
+              animation: rotation 3s infinite linear ;
+              width: 45px;
+              height: 45px;
+              /* border:solid; */
+              /* border-color: dodgerblue; */
+              box-shadow: 0 0 10px 2px dodgerblue;
+              margin-left:-20px;
+              border-radius: 50%;
+
+            }
+
+
+/* css for search bar made the backdroud transparent */
+            header #search{
+              width: 25vw;
+              border-bottom: solid;
+              border-width: 0.5px;
+              padding: 5px;
+              border-radius: 20px;
+              border-color: grey;
+              
+
+              
+                    
+                     
+                       }
+
+            header #search i{
+              width:7%;
+            }                       
+
+
+
+            header div input{
+              
+              outline: none;
+              border: none;
+              border-radius: 10px;
+              padding: 3px;
+              width: 80%;
+              /* padding-left: 20px; */
+              
+          
+              
+               color: white;
+               font-weight: bold;
+               background-color: transparent;            }
+     /* Main section */
+/* main section css containing all songs artist .made its height fixed to get scroll enabled */
+      main{
+
+        display: flex;
+        position: fixed;
+        top: 15%;
+        bottom:0%;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        /* padding-bottom: 15%; */
+        box-shadow: 0 0 10px 3px;
+        overflow:hidden;
+         
+
+         
+           }
+
+/* extra work */
+       main:hover{
+         /* bottom: 15%; */
+         /*  */
+       }    
+           /* SONGS CONTAINER */
+           #songsContainer{
+                          background-color: transparent;
+                          width:80%;
+                          padding: 20px;
+                          overflow-y: scroll;
+                          color: rgb(185, 211, 211);
+                            }
+
+                          #carousel {
+                            display: flex;
+                            flex-direction: row;
+                            height: 40vh;
+                            align-items: center;
+                            justify-content: center;
+
+
+                          }
+  /* carosuel styling is here  when we hover it changes size using transform */
+
+                          #carousel div{
+
+                                      /* position: absolute; */
+                                      box-shadow: 0 0 5px 2px dodgerblue ;
+                                      /* height: 20vh; */
+                                      /* width: 33vw; */
+                                      /* border-radius: 25px; */
+                                      background-color: black;
+                                      /* flex-grow: 12; */
+                                      /* filter: grayscale(100%); */
+                                        
+
+                                        } 
+                                       .gray{
+                                         filter: grayscale(100);
+                                       }
+
+
+
+                                    /* first picture in carousel  */
+                                        #first{
+                                          width: 20vw;
+                                          order: 1;
+                                          top: 8vh;
+                                          height: 20vh;
+                                          background-image: url(https://img.freepik.com/free-vector/music-event-poster-template-with-colorful-shapes_1361-1591.jpg?size=626&ext=jpg);
+                                          background-size: cover;
+                                        }
+                                    /* middle picture in carousel  */
+                                        
+                                        #middle{
+                                          
+                                          z-index: 1;
+                                          order: 2;
+                                          height: 24vh;
+                                          width: 33vw;
+                                          background-image: url(https://img.freepik.com/free-psd/sound-party-cover-template_23-2148131762.jpg?size=626&ext=jpg&uid=A&ga=GA1.2.2008229555.1593257662);
+                                          background-size:cover ;
+                                          background-color: black;
+                                        }
+                                    /* third picture in carousel  */
+                                        
+                                        #third{
+                                          width:20vw;
+                                          order: 3;
+                                            background-image: url(https://image.freepik.com/free-photo/red-electric-guitar-wooden-floor_1150-19456.jpg);
+                                            background-size:cover;
+                                            height: 20vh;
+                                             top: 8vh;
+                                            left: 40vw;
+                                            background-color: black;
+
+                                        }
+
+                                        /* #first:target{
+
+                                          top:-2vh;
+                                          left: 20vw;
+                                          transition: linear 2s all;
+
+                                        } */
+                                      
+                                        #third:hover{
+                                          
+                                          /* background-color: black; */
+                                          filter: none;
+                                          z-index: 1;
+                                          /* height: 30vh; */
+                                          /* position: absolute; */
+                                          height: 30vh;
+                                          width: 40vw;
+                                          /* left: 50vh; */
+                                          /* top:2vh; */
+                                          box-shadow: 0 0 20px 4px red ;
+                                          transition: linear 0.1s all;
+
+                                        }
+                                        #first:hover{
+                                          filter: none;
+
+                                          /* background-color: black; */
+                                          /* height: 30vh; */
+                                          /* position: absolute; */
+                                          z-index: 1;
+                                          height: 30vh;
+                                          width: 40vw;
+                                          top:2vh;
+                                          box-shadow: 0 0 20px 4px darkmagenta ;
+                                          transition: all linear 0.1s ;
+
+                                        }
+                                      /* on hover it changes size */
+
+                                        #middle:hover{
+                                          filter: none;
+                                          /* background-color: black; */
+                                          height: 30vh;
+                                          width: 40vw;
+                                          top: 2vh;
+                                          z-index: 1;
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: linear 0.1s all;
+
+                                          
+                                        }
+                                      
+                                      /* on hover it changes size */
+                                        #third:hover ~ #middle{
+                                          filter: grayscale(100%);
+
+                                          /* background-color: black; */
+                                          /* height: 30vh; */
+                                          z-index:0;
+                                          /* height: 20vh; */
+                                          /* top:vh; */
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: all linear 0.1s ;
+
+                                        }
+                                      /* on hover it changes size */
+
+                                         
+                                        #first:hover ~ #middle{
+                                          filter: grayscale(100%);
+
+                                          /* background-color: black; */
+                                          /* height: 30vh; */
+                                          z-index:0;
+                                          /* height: 20vh; */
+                                          /* top:vh; */
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: all linear 0.1s ;
+
+                                        }
+                                        /* artsist section */
+                              #artist{
+                                margin-top: 40px;
+                                background-color: black;
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                /* position: relative; */
+                                /* top: 50vh; */
+                              }
+
+                              #artist div{
+                                padding: 0;
+                                margin: 25px;
+                                /* background-image: url(meri.jpg); */
+                                background-size: cover;
+ 
+                                /* display: inline-block; */
+                                height: 100px;
+                                width: 100px;
+                                /* background-color: aqua; */
+                                
+                                border-radius: 50%;
+                                box-shadow:0 0 10px 3px dodgerblue;
+
+                              }
+                              
+                              #artist div:hover{
+
+                                /* box-shadow: inset 0 0 50px 5px black; */
+                                transition: 1s all;
+                                /* filter: blur(1px); */
+                                /* box-shadow:0 0 10px 3px aliceblue; */
+                                box-shadow:0 0 10px 3px aliceblue;
+
+                                
+                              }
+                              #artist section:hover{
+                                    background-image: url(circle-cropped\ \(6\).png);
+                                    border-radius: 50%;
+                                    background-size:cover;
+                                    transition:  0.5s all;
+                                box-shadow: inset 10px 10px 50px 10px black;
+                                    
+                                     
+                              }
+
+
+
+
+
+
+
+
+                              /* latest songs section on hover on them gets a menu of some options */
+                              #latest{
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                                background-color: black;
+
+
+
+                              }
+                              
+                              /* on target to footer ..it appears on screen */
+                              #footer:target{
+                                /* bottom: 15%; */
+                                background-color: dodgerblue;
+                                background-image: url(web-header.png);
+                                background-size: cover;
+                                display: flex;
+                                transition: linear 1s;
+                              }
+
+
+
+                              #latest div{
+
+                                 
+                                margin: 24px;
+                                /* background-image: url(/114275907.jpg); */
+                                background-size: cover;
+
+                                /* display: inline-block; */
+                                background-color: b;
+                                height:12vh;
+                                width: 25vw;
+                                /* background-color: aqua; */
+                                /* border-radius: 50%; */
+                                box-shadow:0 0 10px 3px aliceblue;                                
+
+                                 
+
+                              }
+                            /* every image in latest  */
+                              #latest div img{
+                                height: 12vh;
+                              } 
+                              /* option menu that will appear on hover */
+                              #option{
+                                border: none;
+                                box-shadow: none;
+                                /* height: 100px; */
+                                /* width: 80px */
+                                border: solid;
+                                /* background-color: black; */
+                                display: none;
+                                flex-direction: column;
+                                width: 10vw;
+                                position: relative;
+                                /* top:-13vh; */
+                                /* left: 20vh; */
+                                float:right;
+                                padding: 0;
+                                transition: all 1s;
+
+                              }
+
+                            /* on hover options */
+                              #latest span:hover ~ #option{
+                                display: flex;
+                                transition: all 1s;
+                              
+
+                              }
+                              #option:hover{
+
+                                display: flex;
+                                
+                                
+                              }
+
+
+                              #latest span{
+                                float:right;
+                              }
+                              #latest ul{
+                                list-style: none;
+                                border: 0in;
+                                /* margin-left: -20px; */
+                                /* width: 100%; */
+                                
+
+                              }
+                              #latest li button{
+                                width: 100%;
+                                background-color: white;
+                                border-width: 0.2px;
+                                outline: none;
+                                margin: 2px;
+                                background-color: black;
+                                color: white;
+                                padding: 3px;
+                                border-radius: 10px;
+                                box-shadow: 0 0 2px 1px white;
+
+                              }
+                              #latest li button:hover{
+                                box-shadow: 0 0 10px 1px white;
+                                  
+                              }
+
+
+                              
+
+
+
+
+
+
+                          /* radio stations */
+                              #stations{
+                                margin-top: 40px;
+
+                                background-color: black;                                 
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+
+                              }
+                              #stations img{
+                                width: 100%;
+                                height: 100%;
+                              }
+                              #stations img:hover{
+                                cursor: pointer;
+                                box-shadow:0 0 10px 3px aliceblue; 
+                                transition: 1s all;                               
+                                
+                                      
+                              }
+                              #stations div{
+
+                                margin: 25px;
+                                background-image: url(/logoc.png);
+                                background-size: cover;
+
+                                /* display: inline-block; */
+                                height: 70px;
+                                width: 70px;
+                                /* background-color: aqua; */
+                                border-radius: 50%;
+                                box-shadow:0 0 10px 3px aliceblue;                                
+                              }
+
+                              /* category section on hover zooms the image */
+                              #category{
+
+                              display:flex;
+                              flex-direction: row;
+
+                              }
+                              #category div{
+                                height: 25vh;
+                                width: 33%;
+                                margin: 5px;
+                                
+                                contain: content;
+
+                              }
+                              #category div img{
+                                  width: 100%;
+                                  height: 100%;
+                              }
+                              /* on hover zooom in the image */
+                              #category div img:hover{
+
+                                transform: scale(1.2);
+                                transition: 1s all;
+                              }
+                              /* hindi songs section */
+
+                              #hindi{
+                                margin-top: 10px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                background-color: black;
+                              }
+                            /* english song sections */
+                              #english{
+                                margin-top: 10px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                background-color: black;
+
+                              }
+                              /* similar properties */
+                              #hindi div,#english div{
+                                   height: 20vh;
+                                   width: 12vw;
+                                   /* border: solid; */
+                                   margin: 10px;
+                              }
+                              #hindi img,#english img{
+                                width:100% ;
+                                height: 100%;
+
+                              }
+                            /* on hover shadow enables */
+                              #hindi img:hover,#english img:hover{
+                                box-shadow: 0 0 10px 3px currentColor;
+                              }
+
+
+
+            
+             /* aside list section */
+             aside{
+
+                  background-color: transparent;
+                  /* background-image: url(ver.jpg); */
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                   width: 20%;
+                   /* padding-left: -5px; */
+                   overflow-y: scroll;
+                   scroll-behavior: smooth;
+                   transition: all 1s;
+                   
+                   }
+
+                   aside ul{
+
+                    margin-left: -40px;
+                    list-style: none;
+                    
+                   }
+                   
+                   /* css for each list item */
+
+                   aside li{
+                     background-color: black;
+                     color: white;
+                     margin: 10px;
+                     width: 80%;
+                     border-radius: 20px;
+                     font-style: italic;
+                     font-weight: bold;
+                     padding: 5px;
+                     padding-left: 10px;
+                     padding-top: 7px;
+                     box-shadow: 0 0 5px 0px dodgerblue;
+                     
+                     
+                   }
+                   /* on hover we a dark shadow of dogerblue color */
+                   aside li:hover{
+
+                    box-shadow: 0 0 10px 2px dodgerblue;
+                    transition: ease 1.33s all;
+
+                   }
+
+                    /* every list item */
+                   aside li #songimagelist{
+                         height: 25px; 
+                         width: 25px;
+                         border-radius: 50%;
+                         box-shadow: 0 0 4px 1px  dodgerblue;
+                         margin-bottom: 7px;
+                         margin-top: 7px;
+                         
+                   }
+                   /* every list itme button style */
+                   aside li #playbuttonlist{
+                           float: right;
+                           margin-bottom: 7px;
+                           margin-top: 7px;
+                   }
+
+                   aside li #playbuttonlist img{
+                    height: 15px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px 1px white;
+            }
+            aside li #playbuttonlist img:hover{
+                      
+              box-shadow: 0 0 10px 2px white;
+                  }
+
+
+
+
+                   
+
+         /* footer section */
+        
+        
+        
+        
+         footer{
+            display: none;
+            color: aliceblue;
+            position: fixed;
+            background-color:transparent;
+            /* border-bottom-left-radius: 50px; */
+            /* border-bottom-right-radius: 50px; */
+            padding-top: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 15%;
+            flex-direction: column;
+            
+                 }
+        /* progress bar at footer section */
+                 #progressbar{
+                             margin-top:-12px ;
+                             margin-left:-3px ;
+                              width: 100%;
+                              height: 10%;
+                              }
+                  #progressbar input{
+                    cursor:url(Assets/Translucent\ White.cur),auto;
+                              width: 100%;
+                               height: 2px;
+                               
+                              }
+                              /* whole player style in footer section */
+                   #player{
+                           margin-top: 6px;
+                          display: flex;
+                          flex-direction: row;
+                          /* justify-content: center; */
+                          justify-content:space-between;
+                          
+
+                          }
+                          /* currently playing song image and name style w */
+                     #playingSong{
+                         display: flex;
+                         flex-direction: row;
+                         /* justify-content:space-evenly; */
+                         padding: 10px;
+                         
+                           width: 33%;
+                           }
+                        #playingSong div img{
+                          margin: 20px;
+                          margin-top: 0px;
+                          border-radius: 50%;
+                          height: 50px;
+                          box-shadow: 0 0 5px 1px;
+                          
+                        }
+
+                        #playingSong div img:hover{
+                          transition: all 1s;
+                          box-shadow:0 0 10px 2px whitesmoke;
+                        }
+                        #playingSong div{
+                          width:auto;
+                          padding-top: 10px;
+                          text-align: left;
+                        }  
+
+/* player buttons css style */
+                    #buttons{
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: space-evenly;
+                          width: 33%;
+                          margin: 2%;
+                          height: 100%;
+                          
+                            }  
+                    #buttons div{
+                             text-align: center;
+                             width: 25%;
+                             align-items: center;
+                                }        
+                                   /*  player buttons images style */
+                    #buttons img{
+                           display: inline-block;
+                           height: 33px;
+                           border-radius: 50%;
+                           }  
+                     #buttons img:hover{
+                       /* height: 35px; */
+                       border-radius: 50%;
+                       box-shadow: 0 0 10px 2px;
+                     } 
+                      
+                     /* play button */
+                     #play
+                     {
+                        outline: none;
+                        border-radius: 50%;
+                        background-image: url(circle-cropped\ \(6\).png);
+                        height: 33px;
+                        background-size: cover;
+                        width: 33px;
+                        background-color: transparent;
+                        border: none;
+                        box-shadow: 0 0 5px 1px white;
+                        animation: change 1s ease-in-out infinite alternate ;
+                     }
+                     /* on click  it will switch to pause button */
+                     #playing{
+                      outline: none;
+                      border-radius: 50%;
+                      /* background-image: url(circle-cropped\ \(6\).png); */
+                      height: 33px;
+                      background-size: cover;
+                      width: 33px;
+                      background-color: transparent;
+                      border: none;
+                      box-shadow: 0 0 5px 1px white;
+                      animation: change 1s ease-in-out infinite alternate ;
+                      background-image: url(Assets/play.png );
+
+                     }
+                     #pause{
+                      outline: none;
+                      border-radius: 50%;
+                      background-image: url(circle-cropped\ \(6\).png);
+                      height: 33px;
+                      background-size: cover;
+                      width: 33px;
+                      background-color: transparent;
+                      border: none;
+                      box-shadow: 0 0 5px 1px white;
+                      animation: change 1s ease-in-out infinite alternate ;
+                      /* background-image: url(circle-cropped\ \(6\).png); */
+
+                     }
+
+
+                     #play:hover{
+
+                      box-shadow: 0 0 10px 1px white;
+                      
+
+                     }
+
+
+                      
+
+                           /* timer section */
+                     #timer{
+                        height: 100%;
+                        width: 33%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                          }      
+                     #timer img{
+                       height: 30px;
+                     }     
+
+                     #timer img:hover{
+                       height: 32px;
+                     }
+                     /* volume button */
+                     #speaker{
+                       border-radius: 50%;
+                      animation: changev 0.5s linear infinite alternate ;
+                      box-shadow: 0 0 10px 1px white;
+                    
+                                }
+/* volume ajestment slider */
+                     #slider{
+                         
+                      display: none;
+                     }           
+/* on hover it open the slider */
+                     #speaker:hover ~ #slider{
+                      display: inline-block;
+                      width: 100px;
+                      right:2.8%;
+                      
+                      height: 4px;
+                      bottom: 17vh;
+                      position: relative;
+                      box-shadow: 0 0 10px 1px white;
+                      
+                       
+                       transition:1s all;
+                       
+                     }
+
+                     #slider:hover{
+                      display: inline-block;
+
+                      width: 100px;
+                      /* right:3%; */
+                      right:2.8%;
+                      
+                      height: 4px;
+                      bottom: 17vh;
+                      position: relative;;
+                      box-shadow: 0 0 10px 1px white;
+                      
+                       
+                       transition:1s all;
+
+
+                     }
+
+                     /* playlist styling as it opens while we click on artist */
+                     #playlist
+                     /* firstly its display property is none  */
+                     {
+                       /* transform: scale(0); */
+                       display: none;
+                       flex-direction: row;
+                       /* justify-content: space-evenly; */
+                       /* align-content: space-between; */
+                       /* padding: 10px; */
+                       width: 100%;
+                       height: 40vh;
+                       background-color: black;
+                       box-shadow: 0 0 10px 4px white;
+
+                     }
+                     /*  artist pic on their play list  */
+                     #playlist #artistPhoto{
+                       width: 100vw;
+
+                     }
+
+                     
+                     /* while target the  playing we set display property to flex..to make it visible */
+                     #playlist:target ~section{
+                       transform: scale(0);
+                       display: none;
+                       transform: none;
+                           
+                    
+                    }
+                    /* list containing songs for the artist only */
+                    #list{
+                      /* transform: scale(0); */
+                      
+                      contain: content;
+
+                      display: none;
+                      padding: 20px;
+                    
+                      width: 100%;
+                      
+
+                    }
+                    /* unordered list of songs style */
+                    #list ul{
+                      padding-inline-start: 0cm;
+                      
+                      list-style: none;
+                      width: 95%;
+                    }
+                    #list li{
+                      padding: 10px;
+                    }
+                    
+                   #list li{
+                    background-color: black;
+                    color: white;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    border-radius: 0px;
+                    font-style: italic;
+                    font-weight: bold;
+                    padding: 5px;
+                    /* margin: 15px; */
+                    padding-left: 10px;
+                    padding-top: 7px;
+                    box-shadow: 0 0 5px 0px purple;
+                    
+                    
+                  }
+                  #list li:hover{
+
+                   box-shadow: 0 0 10px 2px dodgerblue;
+                   transition: ease 1.33s all;
+
+                  }
+
+                   
+                  #list li #songimagelist{
+                        height: 25px; 
+                        width: 25px;
+                        border-radius: 50%;
+                        box-shadow: 0 0 4px 1px  purple;
+                        
+                  }
+                  #list li #songnamelist{
+                                                  
+                   margin-bottom: 7px;
+                   margin-top: 7px;
+                  }
+                  #list li #playbuttonlist{
+                          float: right;
+                          margin-bottom: 7px;
+                          margin-top: 7px;
+                  }
+
+                  #list li #playbuttonlist img{
+                   height: 15px;
+                   /* border-radius: 50%; */
+                   box-shadow: 0 0 5px 1px white;
+           }
+           #list li #playbuttonlist img:hover{
+                     
+             box-shadow: 0 0 10px 2px white;
+                 }
+
+                    
+                    #playlist:target ~#list{
+                      /* transform: scale(1); */
+                      animation: changes 1s linear 1 alternate ;
+                      /* transition: all 1s; */
+                      display: flex;
+                      
+                    }
+                     
+
+                    #playlist:target{
+                      animation: changes 1s linear 1 alternate ;
+                      /* transform: scale(1); */
+                      /* transition:transform 1s; */
+
+
+                      display: flex;
+                    }
